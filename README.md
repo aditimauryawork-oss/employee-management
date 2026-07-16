@@ -1,6 +1,6 @@
 # Employee Management REST API
 
-A RESTful backend application developed using **Spring Boot**, **Spring Data JPA**, and **MySQL** for managing employee records. The application provides APIs to create, retrieve, update, delete, and search employee information while demonstrating layered architecture and database integration.
+A RESTful backend application developed using **Spring Boot**, **Spring Data JPA**, and **MySQL** for managing employee records. The application demonstrates layered architecture, database integration, CRUD operations, custom search APIs, and exception handling.
 
 ---
 
@@ -8,14 +8,14 @@ A RESTful backend application developed using **Spring Boot**, **Spring Data JPA
 
 - Add a new employee
 - Retrieve all employees
-- Retrieve an employee by ID
-- Update employee details
-- Delete an employee
+- Retrieve employee by ID
+- Update employee information
+- Delete employee records
 - Search employees by department
 - Search employees by name
 - Search employees by salary range
-- Get the total number of employees
-- Global exception handling for invalid employee IDs
+- Get total employee count
+- Global exception handling
 
 ---
 
@@ -35,22 +35,22 @@ A RESTful backend application developed using **Spring Boot**, **Spring Data JPA
 
 ## Project Architecture
 
-```
-Client (Postman)
-        │
-        ▼
+```text
+Postman
+   │
+   ▼
 EmployeeController
-        │
-        ▼
+   │
+   ▼
 EmployeeService
-        │
-        ▼
+   │
+   ▼
 EmployeeRepository
-        │
-        ▼
+   │
+   ▼
 Spring Data JPA / Hibernate
-        │
-        ▼
+   │
+   ▼
 MySQL Database
 ```
 
@@ -103,34 +103,42 @@ src
 
 ## Testing
 
-The application was tested using **Postman** by verifying all CRUD operations and search endpoints.
+The application was tested using **Postman** for all CRUD operations and search APIs.
 
 ---
 
 ## Screenshots
 
 ### Create Employee
+
 ![Create Employee](images/create-employee.png)
 
 ### Get All Employees
+
 ![Get All Employees](images/get-all-employees.png)
 
 ### Get Employee by ID
+
 ![Get Employee by ID](images/get-employee-by-id.png)
 
 ### Search by Department
+
 ![Search by Department](images/search-department.png)
 
 ### Search by Name
+
 ![Search by Name](images/search-name.png)
 
 ### Search by Salary Range
+
 ![Search by Salary Range](images/salary-range.png)
 
 ### Employee Count
+
 ![Employee Count](images/employee-count.png)
 
 ### MySQL Database
+
 ![MySQL Database](images/mysql-table.png)
 
 ---
